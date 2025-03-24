@@ -9,7 +9,7 @@ Cuando queremos crear un formulario en HTML, siempre tenemos que usar la etiquet
   <p><input type="number" name="edad" value="18" min="1" max="120" /></p>
   <p><input type="submit" /></p>
 </form>
-
+```
 ¿Qué pasa en este formulario?
 Los campos <input> son elementos en línea, pero lo recomendable es meterlos dentro de contenedores en bloque como <p> u otras etiquetas semánticas. Las etiquetas <input> son auto-cerradas (unitarias) y para que funcionen correctamente deben tener como mínimo dos atributos: type (que indica el tipo de campo) y name (que es la clave o identificador del campo).
 Si no ponemos el atributo type, se asumirá automáticamente que es text. El atributo name es fundamental para poder acceder a los datos del formulario cuando se envía.
@@ -23,6 +23,6 @@ También podemos usar placeholder para mostrar un texto guía dentro del campo. 
 </form>
 
 Aquí simplemente pedimos una contraseña. El type="password" hace que lo que se escriba se oculte visualmente (con puntos o asteriscos).
-
+```
 
 
