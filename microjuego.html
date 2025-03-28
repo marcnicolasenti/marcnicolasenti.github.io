@@ -18,21 +18,22 @@ function compara_numero ()
     
     if (my_num > numero) {
         resultado.innerHTML = "<em class=\"error\">El número a adivinar es <strong>más pequeño</strong> que "+my_num+"</em>";
-        contador++;
+        
     }
     else if (my_num < numero) {
         resultado.innerHTML = "<em class=\"error\">El número a adivinar es <strong>más grande</strong> que "+my_num+"</em>";
-        contador++;
+      
     }
     else{
-        resultado.innerHTML = "<em class=\"you-win\">¡Lo has acertado, <strong>era "+my_num+"</strong>!";
-        contador;
+        resultado.innerHTML = "<em class=\"you-win\">¡Lo has acertado, <strong>era "+my_num+"</strong>!</em>";
+       
     }
     
     my_num_input.value = "";
     
     my_num_input.focus();
-}
+	}
+
         </script>
 	
 </head>
@@ -52,9 +53,16 @@ function compara_numero ()
 	</header>
 	
 	<main>
+	    <h2>Adivina el número</h2>
+            
+        <p>Adivina el número que he generado, es un número entre el <strong>1</strong> y el <strong>100</strong>
+            
+        <p id="resultado">¡Prueba suerte!</p>
+          
 		<form>
 		<p><label for="field-number">Tu numero: </label><input type="number" name="number" id="field-number" /></p>
-		<p><label for ="field-submit"></label><input type="submit" name="submit" id="field-submit" /></p>
+		<p><label for ="field-submit"></label>
+		 <input type="button" id="field-submit"value="Adivina" onClick="compara_numero();" />
 		</form>
 	</main>
 	<!-- Pie de pagina -->
