@@ -3,6 +3,38 @@
 <head> 
 	<title>Microjuego Marc Nicolas</title> 
 	<link rel="stylesheet" href="estilos.css">
+
+<script>
+let numero = Math.floor(Math.random()*100)+1;        
+        
+function compara_numero ()
+{
+    
+    let my_num_input = document.getElementById("field-number");
+    let submit_input = document.getElementById("field-submit");
+    
+    let my_num = my_num_input.value;
+    let resultado = document.getElementById("resultado");
+    
+    if (my_num > numero) {
+        resultado.innerHTML = "<em class=\"error\">El número a adivinar es <strong>más pequeño</strong> que "+my_num+"</em>";
+        contador++;
+    }
+    else if (my_num < numero) {
+        resultado.innerHTML = "<em class=\"error\">El número a adivinar es <strong>más grande</strong> que "+my_num+"</em>";
+        contador++;
+    }
+    else{
+        resultado.innerHTML = "<em class=\"you-win\">¡Lo has acertado, <strong>era "+my_num+"</strong>!";
+        contador;
+    }
+    
+    my_num_input.value = "";
+    
+    my_num_input.focus();
+}
+        </script>
+	
 </head>
 <body>
 	<!-- Encabezado -->
