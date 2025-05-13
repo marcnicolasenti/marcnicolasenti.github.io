@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contacto</title>
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    section h2 {
+      text-align: center;
+      color: #1561f0;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    section form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    section form input,
+    section form textarea {
+      width: 300px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    section form button,
+    section form input[type="submit"] {
+      padding: 10px 20px;
+      border: none;
+      background-color: #1561f0;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    section form button:hover,
+    section form input[type="submit"]:hover {
+      background-color: #0d3ca0;
+    }
+  </style>
+  <script src="formulario.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Contacto</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="microjuego.html">Microjuego</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Formulario</h2>
+      <form id="contact-form">
+  <p>
+    <label for="name-field">Nombre:</label>
+    <input type="text" name="name" id="name-field" placeholder="Pon tu nombre completo" />
+  </p>
+
+  <p>
+    <label for="birthday-field">Fecha de nacimiento:</label>
+    <input type="date" name="birthday" id="birthday-field" />
+  </p>
+
+  <p>
+    <label for="color-field">Color favorito:</label>
+    <input type="color" name="color" id="color-field" />
+  </p>
+
+  <p>
+    <label for="message-field">Mensaje:</label>
+    <textarea name="message" id="message-field" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+  </p>
+
+  <p>
+    <input type="checkbox" name="checkbox" id="checkbox-field" />
+    <label for="checkbox-field">
+      Acepto las <a href="#">Políticas de privacidad</a> y los
+      <a href="#">términos y condiciones</a>.
+    </label>
+  </p>
+
+  <p>
+    <input type="submit" value="Enviar" />
+  </p>
+</form>
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="microjuego.html">Microjuego</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <p>&copy; Marc Nicolas</p>
+  </footer>
+</body>
+</html>

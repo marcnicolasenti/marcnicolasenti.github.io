@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<title>Microjuego Marc Nicolas</title> 
+	<link rel="stylesheet" href="estilos.css">
+	<script type="text/javascript" src="microjuego.js" defer></script>
+	
+</head>
+<body>
+	<!-- Encabezado -->
+	<header>
+		<h1>Microjuego</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="cv.html">CV</a></li>
+				<li><a href="hobbies.html">Hobbies</a></li>
+				<li><a href="microjuego.html">Microjuego</a></li>
+				<li><a href="contact.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+	    <h2>Adivina el número</h2>
+            
+        <p>Adivina el número que he generado, es un número entre el <strong>1</strong> y el <strong>100</strong>
+            
+        <p id="resultado">¡Prueba suerte!</p>
+          
+		<form>
+		<p><label for="field-number">Tu numero: </label><input type="number" name="number" id="field-number" /></p>
+		<p><label for ="field-submit"></label>
+		 <input type="button" id="field-submit"value="Adivina" onClick="compara_numero();" />
+		</form>
+
+		<p>Dificultad del juego:</p>
+	<progress value="40" max="100">40%</progress>
+
+
+	</main>
+	<!-- Pie de pagina -->
+	<footer>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="cv.html">CV</a></li>
+				<li><a href="hobbies.html">Hobbies</a></li>
+				<li><a href="microjuego.html">Microjuego</a></li>
+				<li><a href="contact.html">Contacto</a></li>
+			</ul>
+		</nav>
+		<p>&copy; Marc Nicolas</p>
+	</footer>
+</body>
+</html>
